@@ -1,0 +1,257 @@
+Connected.
+DROP USER bi CASCADE
+          *
+ERROR at line 1:
+ORA-01918: user 'BI' does not exist
+
+
+
+User created.
+
+
+User altered.
+
+
+User altered.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+specify password for oe as parameter 1:
+
+specify connect string as parameter 2:
+
+Connected.
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Commit complete.
+
+
+specify password for SH as parameter 1:
+
+specify connect string as parameter 2:
+
+Connected.
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Commit complete.
+
+
+specify password for BI as parameter 1:
+
+specify connect string as parameter 2:
+
+Connected.
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Commit complete.
+
+SQL> COLUMN TABLE_NAME FORMAT A25
+SQL> COLUMN COLUMN_NAME FORMAT A30
+SQL> 
+SQL> CONNECT bi/&pwd_bi@&connect_string;
+Connected.
+SQL> 
+SQL> SELECT COUNT(*) FROM customers;
+
+  COUNT(*)
+----------
+     55500
+
+1 row selected.
+
+SQL> SELECT COUNT(*) FROM products;
+
+  COUNT(*)
+----------
+        72
+
+1 row selected.
+
+SQL> SELECT COUNT(*) FROM promotions;
+
+  COUNT(*)
+----------
+       503
+
+1 row selected.
+
+SQL> SELECT COUNT(*) FROM sales;
+
+  COUNT(*)
+----------
+    918843
+
+1 row selected.
+
+SQL> SELECT COUNT(*) FROM costs;
+
+  COUNT(*)
+----------
+     82112
+
+1 row selected.
+
+SQL> 
+SQL> SELECT COUNT(*) FROM sh.cal_month_sales_mv;
+
+  COUNT(*)
+----------
+        48
+
+1 row selected.
+
+SQL> SELECT COUNT(*) FROM sh.fweek_pscat_sales_mv;
+
+  COUNT(*)
+----------
+     11266
+
+1 row selected.
+
+SQL> 
+SQL> SELECT COUNT(*) FROM channels;
+
+  COUNT(*)
+----------
+         5
+
+1 row selected.
+
+SQL> SELECT COUNT(*) FROM countries;
+
+  COUNT(*)
+----------
+        23
+
+1 row selected.
+
+SQL> SELECT COUNT(*) FROM times;
+
+  COUNT(*)
+----------
+      1826
+
+1 row selected.
+
+SQL> 
+SQL> SET ECHO OFF
+Connected.

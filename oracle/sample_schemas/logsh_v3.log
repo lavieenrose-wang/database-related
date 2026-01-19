@@ -1,0 +1,657 @@
+
+Session altered.
+
+DROP USER sh CASCADE
+          *
+ERROR at line 1:
+ORA-01918: user 'SH' does not exist
+
+
+
+User created.
+
+
+User altered.
+
+
+User altered.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+Connected.
+
+Grant succeeded.
+
+
+Directory created.
+
+
+Directory created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+Connected.
+
+Session altered.
+
+
+Session altered.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Creating constraints ...
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+specify password for SH as parameter 1:
+
+specify path for data files as parameter 2:
+
+specify path for log files as parameter 3:
+
+specify version as parameter 4:
+
+specify connect string as parameter 5:
+
+Looking for indexes that could slow down load ...
+
+no rows selected
+
+
+loading TIMES using:
+/u01/app/oracle/sample_schemas/sales_history/time_v3.ctl
+/u01/app/oracle/sample_schemas/sales_history/time_v3.dat
+/u01/app/oracle/sample_schemas/logtime_v3.log
+
+
+loading COUNTRIES using:
+/u01/app/oracle/sample_schemas/sales_history/coun_v3.ctl
+/u01/app/oracle/sample_schemas/sales_history/coun_v3.dat
+/u01/app/oracle/sample_schemas/logcoun_v3.log
+
+
+loading CUSTOMERS using:
+/u01/app/oracle/sample_schemas/sales_history/cust_v3.ctl
+/u01/app/oracle/sample_schemas/sales_history/cust1v3.dat
+/u01/app/oracle/sample_schemas/logcust1v3.log
+
+
+loading PRODUCTS  using:
+/u01/app/oracle/sample_schemas/sales_history/prod_v3.ctl
+/u01/app/oracle/sample_schemas/sales_history/prod1v3.dat
+/u01/app/oracle/sample_schemas/logprod1v3.log
+
+
+loading PROMOTIONS  using:
+/u01/app/oracle/sample_schemas/sales_history/prom_v3.ctl
+/u01/app/oracle/sample_schemas/sales_history/prom1v3.dat
+/u01/app/oracle/sample_schemas/logprom1v3.log
+
+
+loading CHANNELS using:
+/u01/app/oracle/sample_schemas/sales_history/chan_v3.ctl
+/u01/app/oracle/sample_schemas/sales_history/chan_v3.dat
+/u01/app/oracle/sample_schemas/logchan_v3.log
+
+
+loading SALES  using:
+/u01/app/oracle/sample_schemas/sales_history/sale_v3.ctl
+/u01/app/oracle/sample_schemas/sales_history/sale1v3.dat
+/u01/app/oracle/sample_schemas/logsale1v3.log
+
+
+loading COSTS using external table
+
+
+Table created.
+
+
+82112 rows created.
+
+
+loading additonal SALES using:
+/u01/app/oracle/sample_schemas/sales_history/dmsal_v3.ctl
+/u01/app/oracle/sample_schemas/sales_history/dmsal_v3.dat
+/u01/app/oracle/sample_schemas/logdmsal_v3.log
+
+
+loading SUPPLEMENTARY DEMOGRAPHICS using:
+/u01/app/oracle/sample_schemas/sales_history/dem_v3.ctl
+/u01/app/oracle/sample_schemas/sales_history/dem1v3.dat
+/u01/app/oracle/sample_schemas/logdem1v3.log
+
+
+Commit complete.
+
+
+Enabling constraints ...
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Creating additional indexes ...
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Create dimensions ...
+
+Dimension created.
+
+
+Commit complete.
+
+
+Dimension created.
+
+
+Dimension created.
+
+
+Dimension created.
+
+
+Dimension created.
+
+Creating MVs as tables ...
+
+
+View created.
+
+
+Table created.
+
+
+Table created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+Creating materialized views ...
+
+
+Materialized view created.
+
+
+Materialized view created.
+
+
+Creating comments ...
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+gathering statistics ...
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+

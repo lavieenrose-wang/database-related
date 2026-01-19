@@ -1,0 +1,58 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Sun Jan 18 23:00:56 2026
+Version 19.19.0.0.0
+
+Copyright (c) 1982, 2023, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /u01/app/oracle/sample_schemas/sales_history/coun_v3.ctl
+Data File:      /u01/app/oracle/sample_schemas/sales_history/coun_v3.dat
+  Bad File:     /u01/app/oracle/sample_schemas/sales_history/coun_v3.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Continuation:    none specified
+Path used:      Direct
+
+Table COUNTRIES, loaded from every logical record.
+Insert option in effect for this table: APPEND
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+COUNTRY_ID                          FIRST     *   |  O(") CHARACTER            
+COUNTRY_ISO_CODE                     NEXT     *   |  O(") CHARACTER            
+COUNTRY_NAME                         NEXT     *   |  O(") CHARACTER            
+COUNTRY_SUBREGION                    NEXT     *   |  O(") CHARACTER            
+COUNTRY_SUBREGION_ID                 NEXT     *   |  O(") CHARACTER            
+COUNTRY_REGION                       NEXT     *   |  O(") CHARACTER            
+COUNTRY_REGION_ID                    NEXT     *   |  O(") CHARACTER            
+COUNTRY_TOTAL                        NEXT     *   |  O(") CHARACTER            
+COUNTRY_TOTAL_ID                     NEXT     *   |  O(") CHARACTER            
+
+
+Table COUNTRIES:
+  23 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+Bind array size not used in direct path.
+Column array  rows :    1000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:            23
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:        1
+Total stream buffers loaded by SQL*Loader load thread:        0
+
+Run began on Sun Jan 18 23:00:56 2026
+Run ended on Sun Jan 18 23:00:57 2026
+
+Elapsed time was:     00:00:00.30
+CPU time was:         00:00:00.02

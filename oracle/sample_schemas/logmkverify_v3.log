@@ -1,0 +1,956 @@
+
+All named objects and stati
+
+OWNER  OBJECT_TYPE          OBJECT_NAME                    SUBOBJECT_NAME   STATUS
+------ -------------------- ------------------------------ ---------------- --------
+BI     SYNONYM              CHANNELS                                        VALID
+BI     SYNONYM              COSTS                                           VALID
+BI     SYNONYM              COUNTRIES                                       VALID
+BI     SYNONYM              CUSTOMERS                                       VALID
+BI     SYNONYM              PRODUCTS                                        VALID
+BI     SYNONYM              PROMOTIONS                                      VALID
+BI     SYNONYM              SALES                                           VALID
+BI     SYNONYM              TIMES                                           VALID
+HR     INDEX                COUNTRY_C_ID_PK                                 VALID
+HR     INDEX                DEPT_ID_PK                                      VALID
+HR     INDEX                DEPT_LOCATION_IX                                VALID
+HR     INDEX                EMP_DEPARTMENT_IX                               VALID
+HR     INDEX                EMP_EMAIL_UK                                    VALID
+HR     INDEX                EMP_EMP_ID_PK                                   VALID
+HR     INDEX                EMP_JOB_IX                                      VALID
+HR     INDEX                EMP_MANAGER_IX                                  VALID
+HR     INDEX                EMP_NAME_IX                                     VALID
+HR     INDEX                JHIST_DEPARTMENT_IX                             VALID
+HR     INDEX                JHIST_EMPLOYEE_IX                               VALID
+HR     INDEX                JHIST_EMP_ID_ST_DATE_PK                         VALID
+HR     INDEX                JHIST_JOB_IX                                    VALID
+HR     INDEX                JOB_ID_PK                                       VALID
+HR     INDEX                LOC_CITY_IX                                     VALID
+HR     INDEX                LOC_COUNTRY_IX                                  VALID
+HR     INDEX                LOC_ID_PK                                       VALID
+HR     INDEX                LOC_STATE_PROVINCE_IX                           VALID
+HR     INDEX                REG_ID_PK                                       VALID
+HR     PROCEDURE            ADD_JOB_HISTORY                                 VALID
+HR     PROCEDURE            SECURE_DML                                      VALID
+HR     SEQUENCE             DEPARTMENTS_SEQ                                 VALID
+HR     SEQUENCE             EMPLOYEES_SEQ                                   VALID
+HR     SEQUENCE             LOCATIONS_SEQ                                   VALID
+HR     TABLE                COUNTRIES                                       VALID
+HR     TABLE                DEPARTMENTS                                     VALID
+HR     TABLE                EMPLOYEES                                       VALID
+HR     TABLE                JOBS                                            VALID
+HR     TABLE                JOB_HISTORY                                     VALID
+HR     TABLE                LOCATIONS                                       VALID
+HR     TABLE                REGIONS                                         VALID
+HR     TRIGGER              SECURE_EMPLOYEES                                VALID
+HR     TRIGGER              UPDATE_JOB_HISTORY                              VALID
+HR     VIEW                 EMP_DETAILS_VIEW                                VALID
+IX     EVALUATION CONTEXT   AQ$_ORDERS_QUEUETABLE_V                         VALID
+IX     EVALUATION CONTEXT   AQ$_STREAMS_QUEUE_TABLE_V                       VALID
+IX     INDEX                AQ$_STREAMS_QUEUE_TABLE_Y                       VALID
+IX     QUEUE                AQ$_ORDERS_QUEUETABLE_E                         VALID
+IX     QUEUE                AQ$_STREAMS_QUEUE_TABLE_E                       VALID
+IX     QUEUE                ORDERS_QUEUE                                    VALID
+IX     QUEUE                STREAMS_QUEUE                                   VALID
+IX     RULE SET             ORDERS_QUEUE_N                                  VALID
+IX     RULE SET             ORDERS_QUEUE_R                                  VALID
+IX     RULE SET             STREAMS_QUEUE_N                                 VALID
+IX     RULE SET             STREAMS_QUEUE_R                                 VALID
+IX     SEQUENCE             AQ$_ORDERS_QUEUETABLE_N                         VALID
+IX     SEQUENCE             AQ$_STREAMS_QUEUE_TABLE_N                       VALID
+IX     TABLE                AQ$_ORDERS_QUEUETABLE_G                         VALID
+IX     TABLE                AQ$_ORDERS_QUEUETABLE_H                         VALID
+IX     TABLE                AQ$_ORDERS_QUEUETABLE_I                         VALID
+IX     TABLE                AQ$_ORDERS_QUEUETABLE_L                         VALID
+IX     TABLE                AQ$_ORDERS_QUEUETABLE_S                         VALID
+IX     TABLE                AQ$_ORDERS_QUEUETABLE_T                         VALID
+IX     TABLE                AQ$_STREAMS_QUEUE_TABLE_C                       VALID
+IX     TABLE                AQ$_STREAMS_QUEUE_TABLE_G                       VALID
+IX     TABLE                AQ$_STREAMS_QUEUE_TABLE_H                       VALID
+IX     TABLE                AQ$_STREAMS_QUEUE_TABLE_I                       VALID
+IX     TABLE                AQ$_STREAMS_QUEUE_TABLE_L                       VALID
+IX     TABLE                AQ$_STREAMS_QUEUE_TABLE_S                       VALID
+IX     TABLE                AQ$_STREAMS_QUEUE_TABLE_T                       VALID
+IX     TABLE                ORDERS_QUEUETABLE                               VALID
+IX     TABLE                STREAMS_QUEUE_TABLE                             VALID
+IX     TYPE                 ORDER_EVENT_TYP                                 VALID
+IX     VIEW                 AQ$ORDERS_QUEUETABLE                            VALID
+IX     VIEW                 AQ$ORDERS_QUEUETABLE_R                          VALID
+IX     VIEW                 AQ$ORDERS_QUEUETABLE_S                          VALID
+IX     VIEW                 AQ$STREAMS_QUEUE_TABLE                          VALID
+IX     VIEW                 AQ$STREAMS_QUEUE_TABLE_R                        VALID
+IX     VIEW                 AQ$STREAMS_QUEUE_TABLE_S                        VALID
+IX     VIEW                 AQ$_ORDERS_QUEUETABLE_F                         VALID
+IX     VIEW                 AQ$_STREAMS_QUEUE_TABLE_F                       VALID
+OE     FUNCTION             GET_PHONE_NUMBER_F                              VALID
+OE     INDEX                ACTION_TABLE_MEMBERS                            VALID
+OE     INDEX                CUSTOMERS_PK                                    VALID
+OE     INDEX                CUST_ACCOUNT_MANAGER_IX                         VALID
+OE     INDEX                CUST_EMAIL_IX                                   VALID
+OE     INDEX                CUST_LNAME_IX                                   VALID
+OE     INDEX                CUST_UPPER_NAME_IX                              VALID
+OE     INDEX                INVENTORY_IX                                    VALID
+OE     INDEX                INV_PRODUCT_IX                                  VALID
+OE     INDEX                ITEM_ORDER_IX                                   VALID
+OE     INDEX                ITEM_PRODUCT_IX                                 VALID
+OE     INDEX                LINEITEM_TABLE_MEMBERS                          VALID
+OE     INDEX                ORDER_ITEMS_PK                                  VALID
+OE     INDEX                ORDER_ITEMS_UK                                  VALID
+OE     INDEX                ORDER_PK                                        VALID
+OE     INDEX                ORD_CUSTOMER_IX                                 VALID
+OE     INDEX                ORD_ORDER_DATE_IX                               VALID
+OE     INDEX                ORD_SALES_REP_IX                                VALID
+OE     INDEX                PRD_DESC_PK                                     VALID
+OE     INDEX                PRODUCT_INFORMATION_PK                          VALID
+OE     INDEX                PROD_NAME_IX                                    VALID
+OE     INDEX                PROD_SUPPLIER_IX                                VALID
+OE     INDEX                PROMO_ID_PK                                     VALID
+OE     INDEX                WAREHOUSES_PK                                   VALID
+OE     INDEX                WHS_LOCATION_IX                                 VALID
+OE     LOB                  EXTRADATA46_L                                   VALID
+OE     LOB                  NAMESPACES47_L                                  VALID
+OE     SEQUENCE             ORDERS_SEQ                                      VALID
+OE     SYNONYM              COUNTRIES                                       VALID
+OE     SYNONYM              DEPARTMENTS                                     VALID
+OE     SYNONYM              EMPLOYEES                                       VALID
+OE     SYNONYM              JOBS                                            VALID
+OE     SYNONYM              JOB_HISTORY                                     VALID
+OE     SYNONYM              LOCATIONS                                       VALID
+OE     TABLE                ACTION_TABLE                                    VALID
+OE     TABLE                CATEGORIES_TAB                                  VALID
+OE     TABLE                CUSTOMERS                                       VALID
+OE     TABLE                INVENTORIES                                     VALID
+OE     TABLE                LINEITEM_TABLE                                  VALID
+OE     TABLE                ORDERS                                          VALID
+OE     TABLE                ORDER_ITEMS                                     VALID
+OE     TABLE                PRODUCT_DESCRIPTIONS                            VALID
+OE     TABLE                PRODUCT_INFORMATION                             VALID
+OE     TABLE                PRODUCT_REF_LIST_NESTEDTAB                      VALID
+OE     TABLE                PROMOTIONS                                      VALID
+OE     TABLE                PURCHASEORDER                                   VALID
+OE     TABLE                SUBCATEGORY_REF_LIST_NESTEDTAB                  VALID
+OE     TABLE                WAREHOUSES                                      VALID
+OE     TRIGGER              INSERT_ORD_LINE                                 VALID
+OE     TRIGGER              ORDERS_ITEMS_TRG                                VALID
+OE     TRIGGER              ORDERS_TRG                                      VALID
+OE     TRIGGER              PURCHASEORDER$xd                                VALID
+OE     TYPE                 ACTIONS_T                                       VALID
+OE     TYPE                 ACTION_T                                        VALID
+OE     TYPE                 ACTION_V                                        VALID
+OE     TYPE                 CATALOG_TYP                    $VSN_1           VALID
+OE     TYPE                 CATALOG_TYP                                     VALID
+OE     TYPE                 CATEGORY_TYP                   $VSN_1           VALID
+OE     TYPE                 CATEGORY_TYP                                    VALID
+OE     TYPE                 COMPOSITE_CATEGORY_TYP         $VSN_1           VALID
+OE     TYPE                 COMPOSITE_CATEGORY_TYP                          VALID
+OE     TYPE                 CORPORATE_CUSTOMER_TYP                          VALID
+OE     TYPE                 CUSTOMER_TYP                                    VALID
+OE     TYPE                 CUST_ADDRESS_TYP                                VALID
+OE     TYPE                 INVENTORY_LIST_TYP                              VALID
+OE     TYPE                 INVENTORY_TYP                                   VALID
+OE     TYPE                 LEAF_CATEGORY_TYP              $VSN_1           VALID
+OE     TYPE                 LEAF_CATEGORY_TYP                               VALID
+OE     TYPE                 LINEITEMS_T                                     VALID
+OE     TYPE                 LINEITEM_T                                      VALID
+OE     TYPE                 LINEITEM_V                                      VALID
+OE     TYPE                 ORDER_ITEM_LIST_TYP                             VALID
+OE     TYPE                 ORDER_ITEM_TYP                                  VALID
+OE     TYPE                 ORDER_LIST_TYP                                  VALID
+OE     TYPE                 ORDER_TYP                                       VALID
+OE     TYPE                 PART_T                                          VALID
+OE     TYPE                 PHONE_LIST_TYP                                  VALID
+OE     TYPE                 PRODUCT_INFORMATION_TYP                         VALID
+OE     TYPE                 PRODUCT_REF_LIST_TYP                            VALID
+OE     TYPE                 PURCHASEORDER_T                                 VALID
+OE     TYPE                 REJECTION_T                                     VALID
+OE     TYPE                 SHIPPING_INSTRUCTIONS_T                         VALID
+OE     TYPE                 SUBCATEGORY_REF_LIST_TYP                        VALID
+OE     TYPE                 WAREHOUSE_TYP                                   VALID
+OE     TYPE BODY            CATALOG_TYP                                     VALID
+OE     TYPE BODY            COMPOSITE_CATEGORY_TYP                          VALID
+OE     TYPE BODY            LEAF_CATEGORY_TYP                               VALID
+OE     VIEW                 ACCOUNT_MANAGERS                                VALID
+OE     VIEW                 BOMBAY_INVENTORY                                VALID
+OE     VIEW                 CUSTOMERS_VIEW                                  VALID
+OE     VIEW                 OC_CORPORATE_CUSTOMERS                          VALID
+OE     VIEW                 OC_CUSTOMERS                                    VALID
+OE     VIEW                 OC_INVENTORIES                                  VALID
+OE     VIEW                 OC_ORDERS                                       VALID
+OE     VIEW                 OC_PRODUCT_INFORMATION                          VALID
+OE     VIEW                 ORDERS_VIEW                                     VALID
+OE     VIEW                 PRODUCTS                                        VALID
+OE     VIEW                 PRODUCT_PRICES                                  VALID
+OE     VIEW                 SYDNEY_INVENTORY                                VALID
+OE     VIEW                 TORONTO_INVENTORY                               VALID
+PM     INDEX                PRINTMEDIA_PK                                   VALID
+PM     TABLE                PRINT_MEDIA                                     VALID
+PM     TABLE                TEXTDOCS_NESTEDTAB                              VALID
+PM     TYPE                 ADHEADER_TYP                                    VALID
+PM     TYPE                 TEXTDOC_TAB                                     VALID
+PM     TYPE                 TEXTDOC_TYP                                     VALID
+SH     DIMENSION            CHANNELS_DIM                                    VALID
+SH     DIMENSION            CUSTOMERS_DIM                                   VALID
+SH     DIMENSION            PRODUCTS_DIM                                    VALID
+SH     DIMENSION            PROMOTIONS_DIM                                  VALID
+SH     DIMENSION            TIMES_DIM                                       VALID
+SH     INDEX                CHANNELS_PK                                     VALID
+SH     INDEX                COSTS_PROD_BIX                                  VALID
+SH     INDEX                COSTS_TIME_BIX                                  VALID
+SH     INDEX                COUNTRIES_PK                                    VALID
+SH     INDEX                CUSTOMERS_GENDER_BIX                            VALID
+SH     INDEX                CUSTOMERS_MARITAL_BIX                           VALID
+SH     INDEX                CUSTOMERS_PK                                    VALID
+SH     INDEX                CUSTOMERS_YOB_BIX                               VALID
+SH     INDEX                DR$SUP_TEXT_IDX$KD                              VALID
+SH     INDEX                DR$SUP_TEXT_IDX$KR                              VALID
+SH     INDEX                DR$SUP_TEXT_IDX$X                               VALID
+SH     INDEX                FW_PSC_S_MV_CHAN_BIX                            VALID
+SH     INDEX                FW_PSC_S_MV_PROMO_BIX                           VALID
+SH     INDEX                FW_PSC_S_MV_SUBCAT_BIX                          VALID
+SH     INDEX                FW_PSC_S_MV_WD_BIX                              VALID
+SH     INDEX                PRODUCTS_PK                                     VALID
+SH     INDEX                PRODUCTS_PROD_CAT_IX                            VALID
+SH     INDEX                PRODUCTS_PROD_STATUS_BIX                        VALID
+SH     INDEX                PRODUCTS_PROD_SUBCAT_IX                         VALID
+SH     INDEX                PROMO_PK                                        VALID
+SH     INDEX                SALES_CHANNEL_BIX                               VALID
+SH     INDEX                SALES_CUST_BIX                                  VALID
+SH     INDEX                SALES_PROD_BIX                                  VALID
+SH     INDEX                SALES_PROMO_BIX                                 VALID
+SH     INDEX                SALES_TIME_BIX                                  VALID
+SH     INDEX                SUP_TEXT_IDX                                    VALID
+SH     INDEX                TIMES_PK                                        VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_1995       VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_1996       VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_H1_1997    VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_H2_1997    VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_Q1_1998    VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_Q1_1999    VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_Q1_2000    VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_Q1_2001    VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_Q1_2002    VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_Q1_2003    VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_Q2_1998    VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_Q2_1999    VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_Q2_2000    VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_Q2_2001    VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_Q2_2002    VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_Q2_2003    VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_Q3_1998    VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_Q3_1999    VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_Q3_2000    VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_Q3_2001    VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_Q3_2002    VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_Q3_2003    VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_Q4_1998    VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_Q4_1999    VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_Q4_2000    VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_Q4_2001    VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_Q4_2002    VALID
+SH     INDEX PARTITION      COSTS_PROD_BIX                 COSTS_Q4_2003    VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_1995       VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_1996       VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_H1_1997    VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_H2_1997    VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_Q1_1998    VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_Q1_1999    VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_Q1_2000    VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_Q1_2001    VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_Q1_2002    VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_Q1_2003    VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_Q2_1998    VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_Q2_1999    VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_Q2_2000    VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_Q2_2001    VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_Q2_2002    VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_Q2_2003    VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_Q3_1998    VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_Q3_1999    VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_Q3_2000    VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_Q3_2001    VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_Q3_2002    VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_Q3_2003    VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_Q4_1998    VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_Q4_1999    VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_Q4_2000    VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_Q4_2001    VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_Q4_2002    VALID
+SH     INDEX PARTITION      COSTS_TIME_BIX                 COSTS_Q4_2003    VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_1995       VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_1996       VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_H1_1997    VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_H2_1997    VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_Q1_1998    VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_Q1_1999    VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_Q1_2000    VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_Q1_2001    VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_Q1_2002    VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_Q1_2003    VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_Q2_1998    VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_Q2_1999    VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_Q2_2000    VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_Q2_2001    VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_Q2_2002    VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_Q2_2003    VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_Q3_1998    VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_Q3_1999    VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_Q3_2000    VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_Q3_2001    VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_Q3_2002    VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_Q3_2003    VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_Q4_1998    VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_Q4_1999    VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_Q4_2000    VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_Q4_2001    VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_Q4_2002    VALID
+SH     INDEX PARTITION      SALES_CHANNEL_BIX              SALES_Q4_2003    VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_1995       VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_1996       VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_H1_1997    VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_H2_1997    VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_Q1_1998    VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_Q1_1999    VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_Q1_2000    VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_Q1_2001    VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_Q1_2002    VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_Q1_2003    VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_Q2_1998    VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_Q2_1999    VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_Q2_2000    VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_Q2_2001    VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_Q2_2002    VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_Q2_2003    VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_Q3_1998    VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_Q3_1999    VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_Q3_2000    VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_Q3_2001    VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_Q3_2002    VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_Q3_2003    VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_Q4_1998    VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_Q4_1999    VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_Q4_2000    VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_Q4_2001    VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_Q4_2002    VALID
+SH     INDEX PARTITION      SALES_CUST_BIX                 SALES_Q4_2003    VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_1995       VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_1996       VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_H1_1997    VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_H2_1997    VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_Q1_1998    VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_Q1_1999    VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_Q1_2000    VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_Q1_2001    VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_Q1_2002    VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_Q1_2003    VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_Q2_1998    VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_Q2_1999    VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_Q2_2000    VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_Q2_2001    VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_Q2_2002    VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_Q2_2003    VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_Q3_1998    VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_Q3_1999    VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_Q3_2000    VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_Q3_2001    VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_Q3_2002    VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_Q3_2003    VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_Q4_1998    VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_Q4_1999    VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_Q4_2000    VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_Q4_2001    VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_Q4_2002    VALID
+SH     INDEX PARTITION      SALES_PROD_BIX                 SALES_Q4_2003    VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_1995       VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_1996       VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_H1_1997    VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_H2_1997    VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_Q1_1998    VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_Q1_1999    VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_Q1_2000    VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_Q1_2001    VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_Q1_2002    VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_Q1_2003    VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_Q2_1998    VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_Q2_1999    VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_Q2_2000    VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_Q2_2001    VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_Q2_2002    VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_Q2_2003    VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_Q3_1998    VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_Q3_1999    VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_Q3_2000    VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_Q3_2001    VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_Q3_2002    VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_Q3_2003    VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_Q4_1998    VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_Q4_1999    VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_Q4_2000    VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_Q4_2001    VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_Q4_2002    VALID
+SH     INDEX PARTITION      SALES_PROMO_BIX                SALES_Q4_2003    VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_1995       VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_1996       VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_H1_1997    VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_H2_1997    VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_Q1_1998    VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_Q1_1999    VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_Q1_2000    VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_Q1_2001    VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_Q1_2002    VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_Q1_2003    VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_Q2_1998    VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_Q2_1999    VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_Q2_2000    VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_Q2_2001    VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_Q2_2002    VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_Q2_2003    VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_Q3_1998    VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_Q3_1999    VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_Q3_2000    VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_Q3_2001    VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_Q3_2002    VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_Q3_2003    VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_Q4_1998    VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_Q4_1999    VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_Q4_2000    VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_Q4_2001    VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_Q4_2002    VALID
+SH     INDEX PARTITION      SALES_TIME_BIX                 SALES_Q4_2003    VALID
+SH     MATERIALIZED VIEW    CAL_MONTH_SALES_MV                              VALID
+SH     MATERIALIZED VIEW    FWEEK_PSCAT_SALES_MV                            VALID
+SH     TABLE                CAL_MONTH_SALES_MV                              VALID
+SH     TABLE                CHANNELS                                        VALID
+SH     TABLE                COSTS                                           VALID
+SH     TABLE                COUNTRIES                                       VALID
+SH     TABLE                CUSTOMERS                                       VALID
+SH     TABLE                DR$SUP_TEXT_IDX$I                               VALID
+SH     TABLE                DR$SUP_TEXT_IDX$K                               VALID
+SH     TABLE                DR$SUP_TEXT_IDX$N                               VALID
+SH     TABLE                DR$SUP_TEXT_IDX$U                               VALID
+SH     TABLE                FWEEK_PSCAT_SALES_MV                            VALID
+SH     TABLE                PRODUCTS                                        VALID
+SH     TABLE                PROMOTIONS                                      VALID
+SH     TABLE                SALES                                           VALID
+SH     TABLE                SALES_TRANSACTIONS_EXT                          VALID
+SH     TABLE                SUPPLEMENTARY_DEMOGRAPHICS                      VALID
+SH     TABLE                TIMES                                           VALID
+SH     TABLE PARTITION      COSTS                          COSTS_1995       VALID
+SH     TABLE PARTITION      COSTS                          COSTS_1996       VALID
+SH     TABLE PARTITION      COSTS                          COSTS_H1_1997    VALID
+SH     TABLE PARTITION      COSTS                          COSTS_H2_1997    VALID
+SH     TABLE PARTITION      COSTS                          COSTS_Q1_1998    VALID
+SH     TABLE PARTITION      COSTS                          COSTS_Q1_1999    VALID
+SH     TABLE PARTITION      COSTS                          COSTS_Q1_2000    VALID
+SH     TABLE PARTITION      COSTS                          COSTS_Q1_2001    VALID
+SH     TABLE PARTITION      COSTS                          COSTS_Q1_2002    VALID
+SH     TABLE PARTITION      COSTS                          COSTS_Q1_2003    VALID
+SH     TABLE PARTITION      COSTS                          COSTS_Q2_1998    VALID
+SH     TABLE PARTITION      COSTS                          COSTS_Q2_1999    VALID
+SH     TABLE PARTITION      COSTS                          COSTS_Q2_2000    VALID
+SH     TABLE PARTITION      COSTS                          COSTS_Q2_2001    VALID
+SH     TABLE PARTITION      COSTS                          COSTS_Q2_2002    VALID
+SH     TABLE PARTITION      COSTS                          COSTS_Q2_2003    VALID
+SH     TABLE PARTITION      COSTS                          COSTS_Q3_1998    VALID
+SH     TABLE PARTITION      COSTS                          COSTS_Q3_1999    VALID
+SH     TABLE PARTITION      COSTS                          COSTS_Q3_2000    VALID
+SH     TABLE PARTITION      COSTS                          COSTS_Q3_2001    VALID
+SH     TABLE PARTITION      COSTS                          COSTS_Q3_2002    VALID
+SH     TABLE PARTITION      COSTS                          COSTS_Q3_2003    VALID
+SH     TABLE PARTITION      COSTS                          COSTS_Q4_1998    VALID
+SH     TABLE PARTITION      COSTS                          COSTS_Q4_1999    VALID
+SH     TABLE PARTITION      COSTS                          COSTS_Q4_2000    VALID
+SH     TABLE PARTITION      COSTS                          COSTS_Q4_2001    VALID
+SH     TABLE PARTITION      COSTS                          COSTS_Q4_2002    VALID
+SH     TABLE PARTITION      COSTS                          COSTS_Q4_2003    VALID
+SH     TABLE PARTITION      SALES                          SALES_1995       VALID
+SH     TABLE PARTITION      SALES                          SALES_1996       VALID
+SH     TABLE PARTITION      SALES                          SALES_H1_1997    VALID
+SH     TABLE PARTITION      SALES                          SALES_H2_1997    VALID
+SH     TABLE PARTITION      SALES                          SALES_Q1_1998    VALID
+SH     TABLE PARTITION      SALES                          SALES_Q1_1999    VALID
+SH     TABLE PARTITION      SALES                          SALES_Q1_2000    VALID
+SH     TABLE PARTITION      SALES                          SALES_Q1_2001    VALID
+SH     TABLE PARTITION      SALES                          SALES_Q1_2002    VALID
+SH     TABLE PARTITION      SALES                          SALES_Q1_2003    VALID
+SH     TABLE PARTITION      SALES                          SALES_Q2_1998    VALID
+SH     TABLE PARTITION      SALES                          SALES_Q2_1999    VALID
+SH     TABLE PARTITION      SALES                          SALES_Q2_2000    VALID
+SH     TABLE PARTITION      SALES                          SALES_Q2_2001    VALID
+SH     TABLE PARTITION      SALES                          SALES_Q2_2002    VALID
+SH     TABLE PARTITION      SALES                          SALES_Q2_2003    VALID
+SH     TABLE PARTITION      SALES                          SALES_Q3_1998    VALID
+SH     TABLE PARTITION      SALES                          SALES_Q3_1999    VALID
+SH     TABLE PARTITION      SALES                          SALES_Q3_2000    VALID
+SH     TABLE PARTITION      SALES                          SALES_Q3_2001    VALID
+SH     TABLE PARTITION      SALES                          SALES_Q3_2002    VALID
+SH     TABLE PARTITION      SALES                          SALES_Q3_2003    VALID
+SH     TABLE PARTITION      SALES                          SALES_Q4_1998    VALID
+SH     TABLE PARTITION      SALES                          SALES_Q4_1999    VALID
+SH     TABLE PARTITION      SALES                          SALES_Q4_2000    VALID
+SH     TABLE PARTITION      SALES                          SALES_Q4_2001    VALID
+SH     TABLE PARTITION      SALES                          SALES_Q4_2002    VALID
+SH     TABLE PARTITION      SALES                          SALES_Q4_2003    VALID
+SH     VIEW                 PROFITS                                         VALID
+
+488 rows selected.
+
+
+Data types used
+
+OWNER  DATA_TYPE                           DATA_TYPE_OWNER  DAT   COUNT(*)
+------ ----------------------------------- ---------------- --- ----------
+PM     ADHEADER_TYP                        PM                            1
+IX     ANYDATA                             SYS                           7
+IX     AQ$_SIG_PROP                        SYS                           4
+PM     BFILE                                                             1
+PM     BLOB                                                              2
+SH     BLOB                                                              1
+HR     CHAR                                                              3
+IX     CHAR                                                              2
+OE     CHAR                                                              2
+SH     CHAR                                                              5
+IX     CLOB                                                              2
+PM     CLOB                                                              2
+OE     CUSTOMER_TYP                        OE               REF          1
+OE     CUST_ADDRESS_TYP                    OE                            3
+HR     DATE                                                              3
+IX     DATE                                                              6
+OE     DATE                                                              2
+SH     DATE                                                             19
+OE     INTERVAL YEAR(2) TO MONTH                                         3
+OE     INVENTORY_LIST_TYP                  OE                            1
+PM     NCLOB                                                             1
+HR     NUMBER                                                           21
+IX     NUMBER                                                          107
+OE     NUMBER                                                           80
+PM     NUMBER                                                            2
+SH     NUMBER                                                          100
+OE     NVARCHAR2                                                         7
+IX     ORDER_EVENT_TYP                     IX                            3
+OE     ORDER_ITEM_LIST_TYP                 OE                            1
+OE     ORDER_LIST_TYP                      OE                            2
+OE     PHONE_LIST_TYP                      OE                            3
+IX     RAW                                                              32
+IX     ROWID                                                             6
+SH     ROWID                                                             2
+OE     SDO_GEOMETRY                        MDSYS                         2
+PM     TEXTDOC_TAB                         PM                            1
+IX     TIMESTAMP(6)                                                     25
+OE     TIMESTAMP(6) WITH LOCAL TIME ZONE                                 1
+IX     TIMESTAMP(6) WITH TIME ZONE                                       8
+IX     TIMESTAMP(9)                                                      2
+HR     VARCHAR2                                                         24
+IX     VARCHAR2                                                        128
+OE     VARCHAR2                                                         53
+SH     VARCHAR2                                                         47
+OE     WAREHOUSE_TYP                       OE                            1
+OE     XMLTYPE                             SYS                           2
+
+46 rows selected.
+
+
+XML tables
+
+OWNER  TABLE_NAME                     SCHEMA_OWNER     STORAGE_TYPE
+------ ------------------------------ ---------------- --------------------
+OE     PURCHASEORDER                  OE               OBJECT-RELATIONAL
+
+1 row selected.
+
+
+All objects named 'SYS%' (LOBs etc)
+
+OWNER  OBJECT_TYPE          STATUS     COUNT(*)
+------ -------------------- -------- ----------
+IX     INDEX                VALID            16
+OE     INDEX                VALID            24
+PM     INDEX                VALID             9
+SH     INDEX                VALID             3
+IX     LOB                  VALID             3
+OE     LOB                  VALID            13
+PM     LOB                  VALID             7
+SH     LOB                  VALID             1
+IX     TABLE                VALID             2
+OE     TYPE                 VALID             5
+
+10 rows selected.
+
+
+All constraints
+
+OWNER  CONSTRAINT_TYPE      STATUS   VALIDATED        GENERATED          COUNT(*)
+------ -------------------- -------- ---------------- ---------------- ----------
+IX     Check or Not Null    ENABLED  VALIDATED        GENERATED NAME            4
+OE     Check or Not Null    ENABLED  VALIDATED        GENERATED NAME            2
+SH     Check or Not Null    ENABLED  VALIDATED        GENERATED NAME          121
+HR     Check or Not Null    ENABLED  VALIDATED        USER NAME                15
+OE     Check or Not Null    ENABLED  VALIDATED        USER NAME                13
+SH     Foreign key          DISABLED NOT VALIDATED    USER NAME                 2
+OE     Foreign key          ENABLED  NOT VALIDATED    USER NAME                 2
+SH     Foreign key          ENABLED  NOT VALIDATED    USER NAME                 8
+HR     Foreign key          ENABLED  VALIDATED        USER NAME                10
+OE     Foreign key          ENABLED  VALIDATED        USER NAME                 7
+PM     Foreign key          ENABLED  VALIDATED        USER NAME                 1
+SH     Primary key          DISABLED NOT VALIDATED    USER NAME                 1
+SH     Primary key          ENABLED  NOT VALIDATED    USER NAME                 6
+IX     Primary key          ENABLED  VALIDATED        GENERATED NAME           13
+OE     Primary key          ENABLED  VALIDATED        GENERATED NAME            3
+SH     Primary key          ENABLED  VALIDATED        GENERATED NAME            2
+HR     Primary key          ENABLED  VALIDATED        USER NAME                 7
+OE     Primary key          ENABLED  VALIDATED        USER NAME                 8
+PM     Primary key          ENABLED  VALIDATED        USER NAME                 1
+HR     Read only view       ENABLED  NOT VALIDATED    GENERATED NAME            1
+IX     Read only view       ENABLED  NOT VALIDATED    GENERATED NAME            8
+OE     Unique key           ENABLED  VALIDATED        GENERATED NAME            6
+PM     Unique key           ENABLED  VALIDATED        GENERATED NAME            1
+HR     Unique key           ENABLED  VALIDATED        USER NAME                 1
+
+24 rows selected.
+
+
+All dimensions
+
+OWNER  DIMENSION_NAME       I COMPILE_STATE
+------ -------------------- - -------------
+SH     CHANNELS_DIM         N VALID
+SH     CUSTOMERS_DIM        N VALID
+SH     PRODUCTS_DIM         N VALID
+SH     PROMOTIONS_DIM       N VALID
+SH     TIMES_DIM            N VALID
+
+5 rows selected.
+
+
+All granted roles
+
+GRANTED_ROLE              GRANTEE
+------------------------- -------
+AQ_ADMINISTRATOR_ROLE     IX
+AQ_USER_ROLE              IX
+CONNECT                   IX
+CONNECT                   PM
+RESOURCE                  BI
+RESOURCE                  HR
+RESOURCE                  IX
+RESOURCE                  OE
+RESOURCE                  PM
+RESOURCE                  SH
+SELECT_CATALOG_ROLE       IX
+SELECT_CATALOG_ROLE       SH
+XDBADMIN                  OE
+
+13 rows selected.
+
+
+All granted system privileges
+
+PRIVILEGE                 GRANTEE
+------------------------- -------
+ALTER SESSION             BI
+ALTER SESSION             HR
+ALTER SESSION             IX
+ALTER SESSION             SH
+CREATE CLUSTER            BI
+CREATE CLUSTER            IX
+CREATE CLUSTER            SH
+CREATE DATABASE LINK      BI
+CREATE DATABASE LINK      HR
+CREATE DATABASE LINK      IX
+CREATE DATABASE LINK      OE
+CREATE DATABASE LINK      SH
+CREATE DIMENSION          SH
+CREATE INDEXTYPE          IX
+CREATE MATERIALIZED VIEW  OE
+CREATE MATERIALIZED VIEW  SH
+CREATE OPERATOR           IX
+CREATE PROCEDURE          IX
+CREATE RULE               IX
+CREATE RULE SET           IX
+CREATE SEQUENCE           BI
+CREATE SEQUENCE           HR
+CREATE SEQUENCE           IX
+CREATE SEQUENCE           SH
+CREATE SESSION            BI
+CREATE SESSION            HR
+CREATE SESSION            IX
+CREATE SESSION            OE
+CREATE SESSION            SH
+CREATE SYNONYM            BI
+CREATE SYNONYM            HR
+CREATE SYNONYM            IX
+CREATE SYNONYM            OE
+CREATE SYNONYM            SH
+CREATE TABLE              BI
+CREATE TABLE              IX
+CREATE TABLE              SH
+CREATE TRIGGER            IX
+CREATE TYPE               IX
+CREATE VIEW               BI
+CREATE VIEW               HR
+CREATE VIEW               IX
+CREATE VIEW               OE
+CREATE VIEW               SH
+QUERY REWRITE             OE
+QUERY REWRITE             SH
+SELECT ANY DICTIONARY     IX
+UNLIMITED TABLESPACE      BI
+UNLIMITED TABLESPACE      HR
+UNLIMITED TABLESPACE      IX
+UNLIMITED TABLESPACE      OE
+UNLIMITED TABLESPACE      PM
+UNLIMITED TABLESPACE      SH
+
+53 rows selected.
+
+
+All granted object privileges
+
+OWNER  TABLE_NAME                     PRIVILEGE                 GRANTEE
+------ ------------------------------ ------------------------- -------
+HR     COUNTRIES                      REFERENCES                OE
+HR     COUNTRIES                      SELECT                    OE
+HR     DEPARTMENTS                    SELECT                    OE
+HR     EMPLOYEES                      REFERENCES                OE
+HR     EMPLOYEES                      SELECT                    OE
+HR     JOBS                           SELECT                    OE
+HR     JOB_HISTORY                    SELECT                    OE
+HR     LOCATIONS                      REFERENCES                OE
+HR     LOCATIONS                      SELECT                    OE
+OE     BOMBAY_INVENTORY               SELECT                    BI
+OE     CUSTOMERS                      SELECT                    BI
+OE     CUSTOMERS                      SELECT                    PM
+OE     INVENTORIES                    SELECT                    BI
+OE     INVENTORIES                    SELECT                    PM
+OE     ORDERS                         SELECT                    BI
+OE     ORDERS                         SELECT                    PM
+OE     ORDER_ITEMS                    SELECT                    BI
+OE     ORDER_ITEMS                    SELECT                    PM
+OE     PRODUCTS                       SELECT                    BI
+OE     PRODUCT_DESCRIPTIONS           SELECT                    BI
+OE     PRODUCT_DESCRIPTIONS           SELECT                    PM
+OE     PRODUCT_INFORMATION            REFERENCES                PM
+OE     PRODUCT_INFORMATION            SELECT                    BI
+OE     PRODUCT_INFORMATION            SELECT                    PM
+OE     PRODUCT_PRICES                 SELECT                    BI
+OE     PROMOTIONS                     SELECT                    BI
+OE     SYDNEY_INVENTORY               SELECT                    BI
+OE     TORONTO_INVENTORY              SELECT                    BI
+OE     WAREHOUSES                     SELECT                    BI
+OE     WAREHOUSES                     SELECT                    PM
+SH     CAL_MONTH_SALES_MV             SELECT                    BI
+SH     CHANNELS                       SELECT                    BI
+SH     COSTS                          SELECT                    BI
+SH     COUNTRIES                      SELECT                    BI
+SH     CUSTOMERS                      SELECT                    BI
+SH     FWEEK_PSCAT_SALES_MV           SELECT                    BI
+SH     PRODUCTS                       SELECT                    BI
+SH     PROMOTIONS                     SELECT                    BI
+SH     SALES                          SELECT                    BI
+SH     TIMES                          SELECT                    BI
+SYS    AQ$_UNFLUSHED_DEQUEUES         SELECT                    IX
+SYS    DATA_FILE_DIR                  READ                      SH
+SYS    DBMS_APPLY_ADM                 EXECUTE                   IX
+SYS    DBMS_AQ                        EXECUTE                   IX
+SYS    DBMS_AQADM                     EXECUTE                   IX
+SYS    DBMS_AQ_BQVIEW                 EXECUTE                   IX
+SYS    DBMS_CAPTURE_ADM               EXECUTE                   IX
+SYS    DBMS_FLASHBACK                 EXECUTE                   IX
+SYS    DBMS_PROPAGATION_ADM           EXECUTE                   IX
+SYS    DBMS_STATS                     EXECUTE                   HR
+SYS    DBMS_STATS                     EXECUTE                   IX
+SYS    DBMS_STATS                     EXECUTE                   OE
+SYS    DBMS_STATS                     EXECUTE                   PM
+SYS    DBMS_STATS                     EXECUTE                   SH
+SYS    DBMS_STREAMS_ADM               EXECUTE                   IX
+SYS    LOG_FILE_DIR                   READ                      SH
+SYS    LOG_FILE_DIR                   WRITE                     SH
+SYS    MEDIA_DIR                      READ                      PM
+SYS    QT74488_BUFFER                 SELECT                    IX
+SYS    QT74515_BUFFER                 SELECT                    IX
+SYS    SS_OE_XMLDIR                   READ                      OE
+SYS    SS_OE_XMLDIR                   WRITE                     OE
+SYS    SUBDIR                         READ                      OE
+SYS    SUBDIR                         WRITE                     OE
+
+64 rows selected.
+
+
+Space usage
+
+OWNER  SEGMENT_TYPE         SUM(BYTES)
+------ -------------------- ----------
+HR     INDEX                   1245184
+HR     TABLE                    393216
+HR                             1638400
+IX     INDEX                    917504
+IX     TABLE                    524288
+IX     LOBINDEX                 196608
+IX     LOBSEGMENT               393216
+IX                             2031616
+OE     INDEX                   3014656
+OE     TABLE                   3932160
+OE     LOBINDEX                 983040
+OE     LOBSEGMENT              1966080
+OE     NESTED TABLE             589824
+OE                            10485760
+PM     INDEX                    196608
+PM     TABLE                     65536
+PM     LOBINDEX                 458752
+PM     LOBSEGMENT              5373952
+PM     NESTED TABLE              65536
+PM                             6160384
+SH     INDEX                   2424832
+SH     TABLE                  19791872
+SH     LOBINDEX                  65536
+SH     LOBSEGMENT               131072
+SH     INDEX PARTITION        11141120
+SH     TABLE PARTITION       268435456
+SH                           301989888
+                             322306048
+
+28 rows selected.
+
+
+Table cardinality relational and object tables
+
+OWNER  TABLE_NAME                       NUM_ROWS
+------ ------------------------------ ----------
+HR     COUNTRIES                              25
+HR     DEPARTMENTS                            27
+HR     EMPLOYEES                             107
+HR     JOBS                                   19
+HR     JOB_HISTORY                            10
+HR     LOCATIONS                              23
+HR     REGIONS                                 4
+IX     AQ$_ORDERS_QUEUETABLE_G                 0
+IX     AQ$_ORDERS_QUEUETABLE_H                 2
+IX     AQ$_ORDERS_QUEUETABLE_I                 2
+IX     AQ$_ORDERS_QUEUETABLE_L                 2
+IX     AQ$_ORDERS_QUEUETABLE_S                 4
+IX     AQ$_ORDERS_QUEUETABLE_T                 0
+IX     AQ$_STREAMS_QUEUE_TABLE_C               0
+IX     AQ$_STREAMS_QUEUE_TABLE_G               0
+IX     AQ$_STREAMS_QUEUE_TABLE_H               0
+IX     AQ$_STREAMS_QUEUE_TABLE_I               0
+IX     AQ$_STREAMS_QUEUE_TABLE_L               0
+IX     AQ$_STREAMS_QUEUE_TABLE_S               1
+IX     AQ$_STREAMS_QUEUE_TABLE_T               0
+IX     ORDERS_QUEUETABLE                       1
+IX     STREAMS_QUEUE_TABLE                     0
+IX     SYS_IOT_OVER_74502                      0
+IX     SYS_IOT_OVER_74531                      0
+OE     ACTION_TABLE                          132
+OE     CATEGORIES_TAB                         22
+OE     CUSTOMERS                             319
+OE     INVENTORIES                          1112
+OE     LINEITEM_TABLE                       2232
+OE     ORDERS                                105
+OE     ORDER_ITEMS                           665
+OE     PRODUCT_DESCRIPTIONS                 8640
+OE     PRODUCT_INFORMATION                   288
+OE     PRODUCT_REF_LIST_NESTEDTAB            288
+OE     PROMOTIONS                              2
+OE     PURCHASEORDER                         132
+OE     SUBCATEGORY_REF_LIST_NESTEDTAB         21
+OE     WAREHOUSES                              9
+PM     PRINT_MEDIA                             4
+PM     TEXTDOCS_NESTEDTAB                     12
+SH     CAL_MONTH_SALES_MV                     48
+SH     CHANNELS                                5
+SH     COSTS                               82112
+SH     COUNTRIES                              23
+SH     CUSTOMERS                           55500
+SH     DR$SUP_TEXT_IDX$I
+SH     DR$SUP_TEXT_IDX$K
+SH     DR$SUP_TEXT_IDX$N
+SH     DR$SUP_TEXT_IDX$U
+SH     FWEEK_PSCAT_SALES_MV                11266
+SH     PRODUCTS                               72
+SH     PROMOTIONS                            503
+SH     SALES                              918843
+SH     SALES_TRANSACTIONS_EXT             916039
+SH     SUPPLEMENTARY_DEMOGRAPHICS           4500
+SH     TIMES                                1826
+
+56 rows selected.
+
+
+Index cardinality (without  LOB indexes)
+
+OWNER  INDEX_NAME                DISTINCT_KEYS   NUM_ROWS
+------ ------------------------- ------------- ----------
+HR     COUNTRY_C_ID_PK                      25         25
+HR     DEPT_ID_PK                           27         27
+HR     DEPT_LOCATION_IX                      7         27
+HR     EMP_DEPARTMENT_IX                    11        106
+HR     EMP_EMAIL_UK                        107        107
+HR     EMP_EMP_ID_PK                       107        107
+HR     EMP_JOB_IX                           19        107
+HR     EMP_MANAGER_IX                       18        106
+HR     EMP_NAME_IX                         107        107
+HR     JHIST_DEPARTMENT_IX                   6         10
+HR     JHIST_EMPLOYEE_IX                     7         10
+HR     JHIST_EMP_ID_ST_DATE_PK              10         10
+HR     JHIST_JOB_IX                          8         10
+HR     JOB_ID_PK                            19         19
+HR     LOC_CITY_IX                          23         23
+HR     LOC_COUNTRY_IX                       14         23
+HR     LOC_ID_PK                            23         23
+HR     LOC_STATE_PROVINCE_IX                17         17
+HR     REG_ID_PK                             4          4
+IX     AQ$_STREAMS_QUEUE_TABLE_Y             0          0
+OE     ACTION_TABLE_MEMBERS                132        132
+OE     CUSTOMERS_PK                        319        319
+OE     CUST_ACCOUNT_MANAGER_IX               4        319
+OE     CUST_EMAIL_IX                       319        319
+OE     CUST_LNAME_IX                       176        319
+OE     CUST_UPPER_NAME_IX                  319        319
+OE     INVENTORY_IX                       1112       1112
+OE     INV_PRODUCT_IX                      208       1112
+OE     ITEM_ORDER_IX                       105        665
+OE     ITEM_PRODUCT_IX                     185        665
+OE     LINEITEM_TABLE_MEMBERS              132        132
+OE     ORDER_ITEMS_PK                      665        665
+OE     ORDER_ITEMS_UK                      665        665
+OE     ORDER_PK                            105        105
+OE     ORD_CUSTOMER_IX                      47        105
+OE     ORD_ORDER_DATE_IX                   105        105
+OE     ORD_SALES_REP_IX                      9         70
+OE     PRD_DESC_PK                        8640       8640
+OE     PRODUCT_INFORMATION_PK              288        288
+OE     PROD_NAME_IX                       3727       8640
+OE     PROD_SUPPLIER_IX                     62        288
+OE     PROMO_ID_PK                           2          2
+OE     WAREHOUSES_PK                         9          9
+OE     WHS_LOCATION_IX                       9          9
+PM     PRINTMEDIA_PK                         4          4
+SH     CHANNELS_PK                           5          5
+SH     COSTS_PROD_BIX                       72       1068
+SH     COSTS_TIME_BIX                     1460       1460
+SH     COUNTRIES_PK                         23         23
+SH     CUSTOMERS_GENDER_BIX                  2          5
+SH     CUSTOMERS_MARITAL_BIX                11         18
+SH     CUSTOMERS_PK                      55500      55500
+SH     CUSTOMERS_YOB_BIX                    75         75
+SH     DR$SUP_TEXT_IDX$KD                    0          0
+SH     DR$SUP_TEXT_IDX$KR                    0          0
+SH     DR$SUP_TEXT_IDX$X                     0          0
+SH     FW_PSC_S_MV_CHAN_BIX                  4          4
+SH     FW_PSC_S_MV_PROMO_BIX                 4          4
+SH     FW_PSC_S_MV_SUBCAT_BIX               21         21
+SH     FW_PSC_S_MV_WD_BIX                  210        210
+SH     PRODUCTS_PK                          72         72
+SH     PRODUCTS_PROD_CAT_IX                  5         72
+SH     PRODUCTS_PROD_STATUS_BIX              1          1
+SH     PRODUCTS_PROD_SUBCAT_IX              21         72
+SH     PROMO_PK                            503        503
+SH     SALES_CHANNEL_BIX                     4         92
+SH     SALES_CUST_BIX                     7059      35808
+SH     SALES_PROD_BIX                       72       1074
+SH     SALES_PROMO_BIX                       4         54
+SH     SALES_TIME_BIX                     1460       1460
+SH     SUP_TEXT_IDX
+SH     TIMES_PK                           1826       1826
+
+72 rows selected.
+

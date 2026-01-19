@@ -1,0 +1,79 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Sun Jan 18 23:00:57 2026
+Version 19.19.0.0.0
+
+Copyright (c) 1982, 2023, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /u01/app/oracle/sample_schemas/sales_history/prod_v3.ctl
+Data File:      /u01/app/oracle/sample_schemas/sales_history/prod1v3.dat
+  Bad File:     /u01/app/oracle/sample_schemas/sales_history/prod1v3.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Continuation:    none specified
+Path used:      Direct
+
+Table PRODUCTS, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+PROD_ID                             FIRST     *   |  O(^) CHARACTER            
+PROD_NAME                            NEXT     *   |  O(^) CHARACTER            
+PROD_DESC                            NEXT     *   |  O(^) CHARACTER            
+PROD_SUBCATEGORY                     NEXT     *   |  O(^) CHARACTER            
+PROD_SUBCATEGORY_ID                  NEXT     *   |  O(^) CHARACTER            
+PROD_SUBCATEGORY_DESC                NEXT     *   |  O(^) CHARACTER            
+PROD_CATEGORY                        NEXT     *   |  O(^) CHARACTER            
+PROD_CATEGORY_ID                     NEXT     *   |  O(^) CHARACTER            
+PROD_CATEGORY_DESC                   NEXT     *   |  O(^) CHARACTER            
+PROD_WEIGHT_CLASS                    NEXT     *   |  O(^) CHARACTER            
+PROD_UNIT_OF_MEASURE                 NEXT     *   |  O(^) CHARACTER            
+PROD_PACK_SIZE                       NEXT     *   |  O(^) CHARACTER            
+SUPPLIER_ID                          NEXT     *   |  O(^) CHARACTER            
+PROD_STATUS                          NEXT     *   |  O(^) CHARACTER            
+PROD_LIST_PRICE                      NEXT     *   |  O(^) CHARACTER            
+    SQL string for column : "TO_NUMBER(:PROD_LIST_PRICE,'99999999.99')"
+PROD_MIN_PRICE                       NEXT     *   |  O(^) CHARACTER            
+    SQL string for column : "TO_NUMBER(:PROD_MIN_PRICE,'99999999.99')"
+PROD_TOTAL                           NEXT     *   |  O(^) CHARACTER            
+PROD_TOTAL_ID                        NEXT     *   |  O(^) CHARACTER            
+PROD_SRC_ID                          NEXT     *   |  O(^) CHARACTER            
+PROD_EFF_FROM                        NEXT    19   |  O(^) DATE YYYY-MM-DD-HH24-MI-SS
+PROD_EFF_TO                          NEXT    19   |  O(^) DATE YYYY-MM-DD-HH24-MI-SS
+PROD_VALID                           NEXT     *   |  O(^) CHARACTER            
+
+
+Table PRODUCTS:
+  72 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+  Date cache:
+   Max Size:      1000
+   Entries :         1
+   Hits    :        71
+   Misses  :         0
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:            72
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:        1
+Total stream buffers loaded by SQL*Loader load thread:        0
+
+Run began on Sun Jan 18 23:00:57 2026
+Run ended on Sun Jan 18 23:00:57 2026
+
+Elapsed time was:     00:00:00.37
+CPU time was:         00:00:00.02

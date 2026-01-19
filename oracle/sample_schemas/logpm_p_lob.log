@@ -1,0 +1,119 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Sun Jan 18 23:00:50 2026
+Version 19.19.0.0.0
+
+Copyright (c) 1982, 2023, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /u01/app/oracle/sample_schemas/product_media/pm_p_lob.ctl
+Data File:      /u01/app/oracle/sample_schemas/product_media/pm_p_lob.dat
+  Bad File:     /u01/app/oracle/sample_schemas/product_media/pm_p_lob.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     250 rows, maximum of 1048576 bytes
+Continuation:   1:1 = 0X2b(character '+'), in next physical record
+Path used:      Conventional
+
+Table PRINT_MEDIA, loaded when TABLE_TYP = 0X50(character 'P')
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+TABLE_TYP                               1     *   ,  O(") CHARACTER            
+  (FILLER FIELD)
+PRODUCT_ID                           NEXT     *   ,  O(") CHARACTER            
+AD_ID                                NEXT     *   ,  O(") CHARACTER            
+AD_TEXTDOCS_NTAB_SID                 NEXT     *   ,  O(") CHARACTER            
+  (FILLER FIELD)
+AD_TEXTDOCS_NTAB                  DERIVED                 SID
+    Arguments are:
+        AD_TEXTDOCS_NTAB_SID
+AD_COMPOSITE_FIL                     NEXT     *   ,  O(") CHARACTER            
+  (FILLER FIELD)
+AD_COMPOSITE                      DERIVED     *  EOF      RAW                  
+    Dynamic LOBFILE.  Filename in field AD_COMPOSITE_FIL
+AD_SOURCETEXT_FIL                    NEXT     *   ,  O(") CHARACTER            
+  (FILLER FIELD)
+AD_SOURCETEXT                     DERIVED     *  EOF      CHARACTER            
+    Dynamic LOBFILE.  Filename in field AD_SOURCETEXT_FIL
+AD_FINALTEXT_FIL                     NEXT     *   ,  O(") CHARACTER            
+  (FILLER FIELD)
+AD_FINALTEXT                      DERIVED     *  EOF      CHARACTER            
+    Dynamic LOBFILE.  Filename in field AD_FINALTEXT_FIL
+AD_FLTEXTN_FIL                       NEXT     *   ,  O(") CHARACTER            
+  (FILLER FIELD)
+AD_FLTEXTN                        DERIVED     *  EOF      CHARACTER            
+    Dynamic LOBFILE.  Filename in field AD_FLTEXTN_FIL
+AD_PHOTO_FIL                         NEXT     *   ,  O(") CHARACTER            
+  (FILLER FIELD)
+AD_PHOTO                          DERIVED     *  EOF      RAW                  
+    Dynamic LOBFILE.  Filename in field AD_PHOTO_FIL
+AD_GRAPHIC_FIL                       NEXT     *   ,  O(") CHARACTER            
+  (FILLER FIELD)
+AD_GRAPHIC                        DERIVED                 BFILE
+    Arguments are:
+        CONSTANT 'MEDIA_DIR'
+        AD_GRAPHIC_FIL
+AD_HEADER                         DERIVED     *           COLUMN OBJECT        
+
+*** Fields in AD_HEADER
+HEADER_NAME                          NEXT     *   ,  O(") CHARACTER            
+CREATION_DATE                        NEXT     *   ,  O(") DATE mm-dd-yyyy      
+HEADER_TEXT                          NEXT     *   ,  O(") CHARACTER            
+LOGO_FIL                             NEXT     *   ,  O(") CHARACTER            
+  (FILLER FIELD)
+LOGO                              DERIVED     *  EOF      RAW                  
+    Dynamic LOBFILE.  Filename in field AD_HEADER.LOGO_FIL
+*** End of fields in AD_HEADER
+
+
+Table TEXTDOCS_NESTEDTAB, loaded when TABLE_TYP = 0X54(character 'T')
+Insert option in effect for this table: INSERT
+SID for table rows are derived from:
+        TEXTDOC_SID
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+TABLE_TYP                               1     *   ,  O(") CHARACTER            
+  (FILLER FIELD)
+DOCUMENT_TYP                         NEXT     *   ,  O(") CHARACTER            
+FORMATTED_DOC_FIL                    NEXT     *   ,  O(") CHARACTER            
+  (FILLER FIELD)
+FORMATTED_DOC                     DERIVED     *  EOF      RAW                  
+    Dynamic LOBFILE.  Filename in field FORMATTED_DOC_FIL
+TEXTDOC_SID                          NEXT     *   ,  O(") CHARACTER            
+  (FILLER FIELD)
+
+value used for ROWS parameter changed from 250 to 225
+
+Table PRINT_MEDIA:
+  4 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  12 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Table TEXTDOCS_NESTEDTAB:
+  12 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  4 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                1044900 bytes(225 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:            16
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Sun Jan 18 23:00:50 2026
+Run ended on Sun Jan 18 23:00:51 2026
+
+Elapsed time was:     00:00:01.27
+CPU time was:         00:00:00.03

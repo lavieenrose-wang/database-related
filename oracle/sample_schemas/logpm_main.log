@@ -1,0 +1,85 @@
+DROP USER pm CASCADE
+          *
+ERROR at line 1:
+ORA-01918: user 'PM' does not exist
+
+
+
+User created.
+
+
+User altered.
+
+
+User altered.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+Connected.
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+Connected.
+
+Grant succeeded.
+
+
+Directory created.
+
+
+Grant succeeded.
+
+Connected.
+
+Session altered.
+
+
+Session altered.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Table created.
+
+
+Index created.
+
+
+Table altered.
+
+
+Commit complete.
+
+
+
+PL/SQL procedure successfully completed.
+

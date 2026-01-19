@@ -1,0 +1,78 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Sun Jan 18 23:00:57 2026
+Version 19.19.0.0.0
+
+Copyright (c) 1982, 2023, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /u01/app/oracle/sample_schemas/sales_history/cust_v3.ctl
+Data File:      /u01/app/oracle/sample_schemas/sales_history/cust1v3.dat
+  Bad File:     /u01/app/oracle/sample_schemas/sales_history/cust1v3.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Continuation:    none specified
+Path used:      Direct
+
+Table CUSTOMERS, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+CUST_ID                             FIRST     *   |  O(") CHARACTER            
+CUST_FIRST_NAME                      NEXT     *   |  O(") CHARACTER            
+CUST_LAST_NAME                       NEXT     *   |  O(") CHARACTER            
+CUST_GENDER                          NEXT     *   |  O(") CHARACTER            
+CUST_YEAR_OF_BIRTH                   NEXT     *   |  O(") CHARACTER            
+CUST_MARITAL_STATUS                  NEXT     *   |  O(") CHARACTER            
+CUST_STREET_ADDRESS                  NEXT     *   |  O(") CHARACTER            
+CUST_POSTAL_CODE                     NEXT     *   |  O(") CHARACTER            
+CUST_CITY                            NEXT     *   |  O(") CHARACTER            
+CUST_CITY_ID                         NEXT     *   |  O(") CHARACTER            
+CUST_STATE_PROVINCE                  NEXT     *   |  O(") CHARACTER            
+CUST_STATE_PROVINCE_ID               NEXT     *   |  O(") CHARACTER            
+COUNTRY_ID                           NEXT     *   |  O(") CHARACTER            
+CUST_MAIN_PHONE_NUMBER               NEXT     *   |  O(") CHARACTER            
+CUST_INCOME_LEVEL                    NEXT     *   |  O(") CHARACTER            
+CUST_CREDIT_LIMIT                    NEXT     *   |  O(") CHARACTER            
+CUST_EMAIL                           NEXT     *   |  O(") CHARACTER            
+CUST_TOTAL                           NEXT     *   |  O(") CHARACTER            
+CUST_TOTAL_ID                        NEXT     *   |  O(") CHARACTER            
+CUST_SRC_ID                          NEXT     *   |  O(") CHARACTER            
+CUST_EFF_FROM                        NEXT    19   |  O(") DATE YYYY-MM-DD-HH24-MI-SS
+CUST_EFF_TO                          NEXT    19   |  O(") DATE YYYY-MM-DD-HH24-MI-SS
+CUST_VALID                           NEXT     *   |  O(") CHARACTER            
+
+
+Table CUSTOMERS:
+  55500 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+  Date cache:
+   Max Size:      1000
+   Entries :         1
+   Hits    :     55499
+   Misses  :         0
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:         55500
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:       18
+Total stream buffers loaded by SQL*Loader load thread:       34
+
+Run began on Sun Jan 18 23:00:57 2026
+Run ended on Sun Jan 18 23:00:57 2026
+
+Elapsed time was:     00:00:00.48
+CPU time was:         00:00:00.10

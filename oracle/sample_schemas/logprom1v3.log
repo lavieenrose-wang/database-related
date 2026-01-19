@@ -1,0 +1,67 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Sun Jan 18 23:00:57 2026
+Version 19.19.0.0.0
+
+Copyright (c) 1982, 2023, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /u01/app/oracle/sample_schemas/sales_history/prom_v3.ctl
+Data File:      /u01/app/oracle/sample_schemas/sales_history/prom1v3.dat
+  Bad File:     /u01/app/oracle/sample_schemas/sales_history/prom1v3.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Continuation:    none specified
+Path used:      Direct
+
+Table PROMOTIONS, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+PROMO_ID                            FIRST     *   |  O(^) CHARACTER            
+PROMO_NAME                           NEXT     *   |  O(^) CHARACTER            
+PROMO_SUBCATEGORY                    NEXT     *   |  O(^) CHARACTER            
+PROMO_SUBCATEGORY_ID                 NEXT     *   |  O(^) CHARACTER            
+PROMO_CATEGORY                       NEXT     *   |  O(^) CHARACTER            
+PROMO_CATEGORY_ID                    NEXT     *   |  O(^) CHARACTER            
+PROMO_COST                           NEXT     *   |  O(^) CHARACTER            
+    SQL string for column : "TO_NUMBER(:PROMO_COST,'9999999999.99')"
+PROMO_BEGIN_DATE                     NEXT    19   |  O(^) DATE YYYY-MM-DD-HH24-MI-SS
+PROMO_END_DATE                       NEXT    19   |  O(^) DATE YYYY-MM-DD-HH24-MI-SS
+PROMO_TOTAL                          NEXT     *   |  O(^) CHARACTER            
+PROMO_TOTAL_ID                       NEXT     *   |  O(^) CHARACTER            
+
+
+Table PROMOTIONS:
+  503 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+  Date cache:
+   Max Size:      1000
+   Entries :       344
+   Hits    :       662
+   Misses  :         0
+
+Bind array size not used in direct path.
+Column array  rows :      10
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:           503
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:       51
+Total stream buffers loaded by SQL*Loader load thread:        0
+
+Run began on Sun Jan 18 23:00:57 2026
+Run ended on Sun Jan 18 23:00:58 2026
+
+Elapsed time was:     00:00:00.40
+CPU time was:         00:00:00.02

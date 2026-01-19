@@ -1,0 +1,77 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Sun Jan 18 23:00:58 2026
+Version 19.19.0.0.0
+
+Copyright (c) 1982, 2023, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /u01/app/oracle/sample_schemas/sales_history/sale_v3.ctl
+Data File:      /u01/app/oracle/sample_schemas/sales_history/sale1v3.dat
+  Bad File:     /u01/app/oracle/sample_schemas/sales_history/sale1v3.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Continuation:    none specified
+Path used:      Direct
+
+Table SALES, loaded from every logical record.
+Insert option in effect for this table: INSERT
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+PROD_ID                             FIRST     *   |  O(^) CHARACTER            
+CUST_ID                              NEXT     *   |  O(^) CHARACTER            
+TIME_ID                              NEXT    10   |  O(^) DATE YYYY-MM-DD      
+CHANNEL_ID                           NEXT     *   |  O(^) CHARACTER            
+PROMO_ID                             NEXT     *   |  O(^) CHARACTER            
+QUANTITY_SOLD                        NEXT     *   |  O(^) CHARACTER            
+    SQL string for column : "TO_NUMBER(:QUANTITY_SOLD,'9999999999.99')"
+AMOUNT_SOLD                          NEXT     *   |  O(^) CHARACTER            
+    SQL string for column : "TO_NUMBER(:AMOUNT_SOLD,'9999999999.99')"
+
+
+Table SALES:
+  916039 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+  Date conversion cache disabled due to overflow (default size: 1000)
+
+  Partition SALES_Q1_1998: 43324 Rows loaded.
+  Partition SALES_Q1_1999: 64186 Rows loaded.
+  Partition SALES_Q1_2000: 61845 Rows loaded.
+  Partition SALES_Q1_2001: 60608 Rows loaded.
+  Partition SALES_Q2_1998: 35168 Rows loaded.
+  Partition SALES_Q2_1999: 54233 Rows loaded.
+  Partition SALES_Q2_2000: 55137 Rows loaded.
+  Partition SALES_Q2_2001: 63292 Rows loaded.
+  Partition SALES_Q3_1998: 50515 Rows loaded.
+  Partition SALES_Q3_1999: 67138 Rows loaded.
+  Partition SALES_Q3_2000: 58950 Rows loaded.
+  Partition SALES_Q3_2001: 65769 Rows loaded.
+  Partition SALES_Q4_1998: 47753 Rows loaded.
+  Partition SALES_Q4_1999: 62388 Rows loaded.
+  Partition SALES_Q4_2000: 55984 Rows loaded.
+  Partition SALES_Q4_2001: 69749 Rows loaded.
+
+Bind array size not used in direct path.
+Column array  rows :    5000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:        916039
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:      209
+Total stream buffers loaded by SQL*Loader load thread:        0
+
+Run began on Sun Jan 18 23:00:58 2026
+Run ended on Sun Jan 18 23:01:00 2026
+
+Elapsed time was:     00:00:02.35
+CPU time was:         00:00:00.59

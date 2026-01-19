@@ -1,0 +1,253 @@
+dropping user ...
+DROP USER ix CASCADE
+          *
+ERROR at line 1:
+ORA-01918: user 'IX' does not exist
+
+
+creating user ...
+
+
+User created.
+
+
+User altered.
+
+
+User altered.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+Connected.
+Granting Streams privileges, vrs=v3 ...
+
+PL/SQL procedure successfully completed.
+
+setting job_queue_processes and aq_tm_processes ...
+
+PL/SQL procedure successfully completed.
+
+Connected.
+
+Type created.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+Connected.
+
+Session altered.
+
+
+Session altered.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+QUEUE           MSG_STATE       CONSUMER_NAME   USER_DATA(ORDER_ID, PRODUCT_ID, CUSTOMER_ID, CUST_FIRST_NAME
+--------------- --------------- --------------- ------------------------------------------------------------
+ORDERS_QUEUE    READY           BILLING         ORDER_EVENT_TYP(2458, 3117, 101, 'Constantin', 'Welles', 0,
+                                                '12-DEC-02')
+
+ORDERS_QUEUE    READY           SHIPPING        ORDER_EVENT_TYP(2458, 3117, 101, 'Constantin', 'Welles', 0,
+                                                '12-DEC-02')
+
+
+2 rows selected.
+
+
+PL/SQL procedure successfully completed.
+
+
+QUEUE           MSG_STATE       CONSUMER_NAME   USER_DATA(ORDER_ID, PRODUCT_ID, CUSTOMER_ID, CUST_FIRST_NAME
+--------------- --------------- --------------- ------------------------------------------------------------
+ORDERS_QUEUE    READY           BILLING         ORDER_EVENT_TYP(2458, 3117, 101, 'Constantin', 'Welles', 0,
+                                                '12-DEC-02')
+
+ORDERS_QUEUE    PROCESSED       SHIPPING        ORDER_EVENT_TYP(2458, 3117, 101, 'Constantin', 'Welles', 0,
+                                                '12-DEC-02')
+
+
+2 rows selected.
+
+
+PL/SQL procedure successfully completed.
+
+
+QUEUE           MSG_STATE       CONSUMER_NAME   USER_DATA(ORDER_ID, PRODUCT_ID, CUSTOMER_ID, CUST_FIRST_NAME
+--------------- --------------- --------------- ------------------------------------------------------------
+ORDERS_QUEUE    PROCESSED       BILLING         ORDER_EVENT_TYP(2458, 3117, 101, 'Constantin', 'Welles', 0,
+                                                '12-DEC-02')
+
+ORDERS_QUEUE    PROCESSED       SHIPPING        ORDER_EVENT_TYP(2458, 3117, 101, 'Constantin', 'Welles', 0,
+                                                '12-DEC-02')
+
+
+2 rows selected.
+
+
+PL/SQL procedure successfully completed.
+
+
+OBJECT_TYPE          OBJECT_NAME                    STATUS
+-------------------- ------------------------------ -------
+EVALUATION CONTEXT   AQ$_ORDERS_QUEUETABLE_V        VALID
+EVALUATION CONTEXT   AQ$_STREAMS_QUEUE_TABLE_V      VALID
+INDEX                AQ$_STREAMS_QUEUE_TABLE_Y      VALID
+INDEX                SYS_C007551                    VALID
+INDEX                SYS_C007554                    VALID
+INDEX                SYS_C007563                    VALID
+INDEX                SYS_C007566                    VALID
+INDEX                SYS_IL0000074488C00036$$       VALID
+INDEX                SYS_IL0000074515C00028$$       VALID
+INDEX                SYS_IL0000074515C00029$$       VALID
+INDEX                SYS_IOT_TOP_74497              VALID
+INDEX                SYS_IOT_TOP_74499              VALID
+INDEX                SYS_IOT_TOP_74502              VALID
+INDEX                SYS_IOT_TOP_74505              VALID
+INDEX                SYS_IOT_TOP_74526              VALID
+INDEX                SYS_IOT_TOP_74528              VALID
+INDEX                SYS_IOT_TOP_74531              VALID
+INDEX                SYS_IOT_TOP_74534              VALID
+INDEX                SYS_IOT_TOP_74536              VALID
+LOB                  SYS_LOB0000074488C00036$$      VALID
+LOB                  SYS_LOB0000074515C00028$$      VALID
+LOB                  SYS_LOB0000074515C00029$$      VALID
+QUEUE                AQ$_ORDERS_QUEUETABLE_E        VALID
+QUEUE                AQ$_STREAMS_QUEUE_TABLE_E      VALID
+QUEUE                ORDERS_QUEUE                   VALID
+QUEUE                STREAMS_QUEUE                  VALID
+RULE SET             ORDERS_QUEUE_N                 VALID
+RULE SET             ORDERS_QUEUE_R                 VALID
+RULE SET             STREAMS_QUEUE_N                VALID
+RULE SET             STREAMS_QUEUE_R                VALID
+SEQUENCE             AQ$_ORDERS_QUEUETABLE_N        VALID
+SEQUENCE             AQ$_STREAMS_QUEUE_TABLE_N      VALID
+TABLE                AQ$_ORDERS_QUEUETABLE_G        VALID
+TABLE                AQ$_ORDERS_QUEUETABLE_H        VALID
+TABLE                AQ$_ORDERS_QUEUETABLE_I        VALID
+TABLE                AQ$_ORDERS_QUEUETABLE_L        VALID
+TABLE                AQ$_ORDERS_QUEUETABLE_S        VALID
+TABLE                AQ$_ORDERS_QUEUETABLE_T        VALID
+TABLE                AQ$_STREAMS_QUEUE_TABLE_C      VALID
+TABLE                AQ$_STREAMS_QUEUE_TABLE_G      VALID
+TABLE                AQ$_STREAMS_QUEUE_TABLE_H      VALID
+TABLE                AQ$_STREAMS_QUEUE_TABLE_I      VALID
+TABLE                AQ$_STREAMS_QUEUE_TABLE_L      VALID
+TABLE                AQ$_STREAMS_QUEUE_TABLE_S      VALID
+TABLE                AQ$_STREAMS_QUEUE_TABLE_T      VALID
+TABLE                ORDERS_QUEUETABLE              VALID
+TABLE                STREAMS_QUEUE_TABLE            VALID
+TABLE                SYS_IOT_OVER_74502             VALID
+TABLE                SYS_IOT_OVER_74531             VALID
+TYPE                 ORDER_EVENT_TYP                VALID
+VIEW                 AQ$ORDERS_QUEUETABLE           VALID
+VIEW                 AQ$ORDERS_QUEUETABLE_R         VALID
+VIEW                 AQ$ORDERS_QUEUETABLE_S         VALID
+VIEW                 AQ$STREAMS_QUEUE_TABLE         VALID
+VIEW                 AQ$STREAMS_QUEUE_TABLE_R       VALID
+VIEW                 AQ$STREAMS_QUEUE_TABLE_S       VALID
+VIEW                 AQ$_ORDERS_QUEUETABLE_F        VALID
+VIEW                 AQ$_STREAMS_QUEUE_TABLE_F      VALID
+
+58 rows selected.
+
+
+OBJECT_TYPE          STATUS    COUNT(*)
+-------------------- ------- ----------
+EVALUATION CONTEXT   VALID            2
+INDEX                VALID           17
+LOB                  VALID            3
+QUEUE                VALID            4
+RULE SET             VALID            4
+SEQUENCE             VALID            2
+TABLE                VALID           17
+TYPE                 VALID            1
+VIEW                 VALID            8
+
+9 rows selected.
+
+Connected.
+
+PL/SQL procedure successfully completed.
+

@@ -1,0 +1,89 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Sun Jan 18 23:00:55 2026
+Version 19.19.0.0.0
+
+Copyright (c) 1982, 2023, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /u01/app/oracle/sample_schemas/sales_history/time_v3.ctl
+Data File:      /u01/app/oracle/sample_schemas/sales_history/time_v3.dat
+  Bad File:     /u01/app/oracle/sample_schemas/sales_history/time_v3.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Continuation:    none specified
+Path used:      Direct
+
+Table TIMES, loaded from every logical record.
+Insert option in effect for this table: APPEND
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+TIME_ID                             FIRST    19   |  O(") DATE YYYY-MM-DD-HH24-MI-SS
+DAY_NAME                             NEXT     *   |  O(") CHARACTER            
+DAY_NUMBER_IN_WEEK                   NEXT     *   |  O(") CHARACTER            
+DAY_NUMBER_IN_MONTH                  NEXT     *   |  O(") CHARACTER            
+CALENDAR_WEEK_NUMBER                 NEXT     *   |  O(") CHARACTER            
+FISCAL_WEEK_NUMBER                   NEXT     *   |  O(") CHARACTER            
+WEEK_ENDING_DAY                      NEXT    19   |  O(") DATE YYYY-MM-DD-HH24-MI-SS
+WEEK_ENDING_DAY_ID                   NEXT     *   |  O(") CHARACTER            
+CALENDAR_MONTH_NUMBER                NEXT     *   |  O(") CHARACTER            
+FISCAL_MONTH_NUMBER                  NEXT     *   |  O(") CHARACTER            
+CALENDAR_MONTH_DESC                  NEXT     *   |  O(") CHARACTER            
+CALENDAR_MONTH_ID                    NEXT     *   |  O(") CHARACTER            
+FISCAL_MONTH_DESC                    NEXT     *   |  O(") CHARACTER            
+FISCAL_MONTH_ID                      NEXT     *   |  O(") CHARACTER            
+DAYS_IN_CAL_MONTH                    NEXT     *   |  O(") CHARACTER            
+DAYS_IN_FIS_MONTH                    NEXT     *   |  O(") CHARACTER            
+END_OF_CAL_MONTH                     NEXT    19   |  O(") DATE YYYY-MM-DD-HH24-MI-SS
+END_OF_FIS_MONTH                     NEXT    19   |  O(") DATE YYYY-MM-DD-HH24-MI-SS
+CALENDAR_MONTH_NAME                  NEXT     *   |  O(") CHARACTER            
+FISCAL_MONTH_NAME                    NEXT     *   |  O(") CHARACTER            
+CALENDAR_QUARTER_DESC                NEXT     *   |  O(") CHARACTER            
+CALENDAR_QUARTER_ID                  NEXT     *   |  O(") CHARACTER            
+FISCAL_QUARTER_DESC                  NEXT     *   |  O(") CHARACTER            
+FISCAL_QUARTER_ID                    NEXT     *   |  O(") CHARACTER            
+DAYS_IN_CAL_QUARTER                  NEXT     *   |  O(") CHARACTER            
+DAYS_IN_FIS_QUARTER                  NEXT     *   |  O(") CHARACTER            
+END_OF_CAL_QUARTER                   NEXT    19   |  O(") DATE YYYY-MM-DD-HH24-MI-SS
+END_OF_FIS_QUARTER                   NEXT    19   |  O(") DATE YYYY-MM-DD-HH24-MI-SS
+CALENDAR_QUARTER_NUMBER              NEXT     *   |  O(") CHARACTER            
+FISCAL_QUARTER_NUMBER                NEXT     *   |  O(") CHARACTER            
+CALENDAR_YEAR                        NEXT     *   |  O(") CHARACTER            
+CALENDAR_YEAR_ID                     NEXT     *   |  O(") CHARACTER            
+FISCAL_YEAR                          NEXT     *   |  O(") CHARACTER            
+FISCAL_YEAR_ID                       NEXT     *   |  O(") CHARACTER            
+DAYS_IN_CAL_YEAR                     NEXT     *   |  O(") CHARACTER            
+DAYS_IN_FIS_YEAR                     NEXT     *   |  O(") CHARACTER            
+END_OF_CAL_YEAR                      NEXT    19   |  O(") DATE YYYY-MM-DD-HH24-MI-SS
+END_OF_FIS_YEAR                      NEXT    19   |  O(") DATE YYYY-MM-DD-HH24-MI-SS
+
+
+Table TIMES:
+  1826 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+  Date conversion cache disabled due to overflow (default size: 1000)
+
+Bind array size not used in direct path.
+Column array  rows :    1000
+Stream buffer bytes:  256000
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:          1826
+Total logical records rejected:         0
+Total logical records discarded:        0
+Total stream buffers loaded by SQL*Loader main thread:        2
+Total stream buffers loaded by SQL*Loader load thread:        0
+
+Run began on Sun Jan 18 23:00:55 2026
+Run ended on Sun Jan 18 23:00:56 2026
+
+Elapsed time was:     00:00:00.78
+CPU time was:         00:00:00.03

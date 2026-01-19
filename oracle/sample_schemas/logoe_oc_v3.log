@@ -1,0 +1,866 @@
+DROP USER oe CASCADE
+          *
+ERROR at line 1:
+ORA-01918: user 'OE' does not exist
+
+
+
+User created.
+
+
+User altered.
+
+
+User altered.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+Connected.
+
+Grant succeeded.
+
+Connected.
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+Connected.
+
+Session altered.
+
+
+Session altered.
+
+
+specify Sample Schema version as parameter 1:
+
+specify password for OE as parameter 2:
+
+PROMPT password for SYS as parameter 3:
+
+specify connect string as parameter 4:
+
+
+Type created.
+
+
+Type created.
+
+
+Table created.
+
+
+Index created.
+
+
+Table altered.
+
+
+Table created.
+
+
+Index created.
+
+
+Table altered.
+
+
+Table created.
+
+
+Index created.
+
+
+Index created.
+
+
+Table altered.
+
+
+Trigger created.
+
+
+Table created.
+
+
+Index created.
+
+
+Table altered.
+
+
+Table created.
+
+
+Index created.
+
+
+Table altered.
+
+
+Table created.
+
+
+Table altered.
+
+
+Table created.
+
+
+Index created.
+
+
+Table altered.
+
+
+Table created.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Sequence created.
+
+
+specify password for OE as parameter 1:
+
+PROMPT password for SYS as parameter 2:
+
+specify connect string as parameter 3:
+
+Connected.
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+View created.
+
+
+View created.
+
+
+Grant succeeded.
+
+
+Session altered.
+
+
+Package created.
+
+
+Warning: Package Body created with compilation errors.
+
+
+View created.
+
+
+Package altered.
+
+
+View altered.
+
+
+Grant succeeded.
+
+
+Trigger created.
+
+
+Synonym created.
+
+
+Grant succeeded.
+
+
+Call completed.
+
+
+Session altered.
+
+
+Session altered.
+
+
+Function created.
+
+
+no rows selected
+
+
+Synonym created.
+
+
+Grant succeeded.
+
+
+Package created.
+
+
+no rows selected
+
+
+Synonym created.
+
+
+Grant succeeded.
+
+
+Package created.
+
+
+no rows selected
+
+
+Package body created.
+
+
+no rows selected
+
+
+Synonym created.
+
+
+Grant succeeded.
+
+
+Package created.
+
+
+no rows selected
+
+
+Package body created.
+
+
+no rows selected
+
+
+Grant succeeded.
+
+
+Synonym created.
+
+
+Package created.
+
+
+no rows selected
+
+
+Package body created.
+
+
+no rows selected
+
+
+Synonym created.
+
+
+Grant succeeded.
+
+
+specify password for OE as parameter 1:
+
+PROMPT password for SYS as parameter 2:
+
+specify connect string as parameter 3:
+
+
+PL/SQL procedure successfully completed.
+
+Connected.
+DROP DIRECTORY SS_OE_XMLDIR
+*
+ERROR at line 1:
+ORA-04043: object SS_OE_XMLDIR does not exist
+
+
+
+Directory created.
+
+
+Commit complete.
+
+Connected.
+
+Revoke succeeded.
+
+Connected.
+Connected.
+
+Session altered.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+Call completed.
+
+
+Call completed.
+
+
+PL/SQL procedure successfully completed.
+
+Connected.
+
+Revoke succeeded.
+
+Connected.
+Connected.
+
+Revoke succeeded.
+
+
+Revoke succeeded.
+
+
+Revoke succeeded.
+
+
+Package dropped.
+
+
+Package dropped.
+
+
+Package dropped.
+
+
+Package dropped.
+
+
+Package dropped.
+
+
+Trigger dropped.
+
+
+View dropped.
+
+Connected.
+
+Commit complete.
+
+
+specify Sample Schema version as parameter 1:
+
+specify location for data and control files as parameter 2:
+
+specify location for log files as parameter 3:
+
+specify password for oe as parameter 4:
+
+Setting FEEDBACK OFF for inserts
+
+Setting FEEDBACK ON
+
+
+1 row created.
+
+
+1 row created.
+
+
+Commit complete.
+
+
+Table altered.
+
+
+Session altered.
+
+
+Session altered.
+
+
+Commit complete.
+
+
+View created.
+
+
+View created.
+
+
+View created.
+
+
+View created.
+
+
+View created.
+
+
+View created.
+
+
+Function created.
+
+
+View created.
+
+
+View created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Session altered.
+
+...creating subschema OC in OE
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type created.
+
+
+Type body created.
+
+
+Type created.
+
+
+Type body created.
+
+
+Type created.
+
+
+Type body created.
+
+
+Table created.
+
+
+View created.
+
+
+View created.
+
+
+View created.
+
+
+View created.
+
+
+View created.
+
+
+View created.
+
+
+Trigger created.
+
+
+Trigger created.
+
+
+Commit complete.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Type altered.
+
+
+3 rows updated.
+
+
+8 rows updated.
+
+
+6 rows updated.
+
+
+4 rows updated.
+
+
+Commit complete.
+
+
+Type body altered.
+
+
+Type body altered.
+
+
+Type body altered.
+
+
+PL/SQL procedure successfully completed.
+
+Connected.
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
